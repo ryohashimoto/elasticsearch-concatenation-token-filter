@@ -6,7 +6,7 @@
 
     <groupId>org.elasticsearch</groupId>
     <artifactId>elasticsearch-concatenation-token-filter</artifactId>
-    <version>6.2.4.0</version>
+    <version>6.3.2.0</version>
     <packaging>jar</packaging>
     <description>Elasticsearch concatenation token filter plugin</description>
 
@@ -18,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncodint>UTF-8</project.build.sourceEncodint>
-        <elasticsearch.version>6.2.4</elasticsearch.version>
+        <elasticsearch.version>6.3.2</elasticsearch.version>
         <lucene.version>7.2.1</lucene.version>
         <hamcrest.version>1.3</hamcrest.version>
         <guava.version>19.0</guava.version>
