@@ -2,51 +2,43 @@
 
 ## About
 
-Elasticsearhで分割されたトークンを結合するためのフィルター(token filter)をプラグインにしたものです。
-
-## Motivation
-
-- kuromojiで形態素解析され、ローマ字に変換されたトークンを再度結合する必要があったため作成しました。
-- kuromojiに関係なく、トークンを結合する用途で使用できます。
-- 例えば、「脳梗塞」という単語を「脳こうそく」で検索しようとした場合に、前者は「nokosoku」、後者は「no」と「kosoku」のトークンに変換されます。
-- あらかじめ、「nokosoku」でインデックスされていた場合、後者ではヒットしなくなります。
-- このフィルターを用いることで、「脳こうそく」の場合も「nokosoku」のトークンに変換できるようになります。
+Token filter plug-in for combining tokens in Elasticsearh.
 
 ## Build
 
-リポジトリからソースコードを取得します。
+Get the source code from the repository.
 
 ```
 git clone https://github.com/ryohashimoto/elasticsearch-concatenation-token-filter.git
 ```
 
-Elasticsearch 6.2.2に対応したタグをチェックアウトする場合は、以下のようにします。
+To check out the tag for Elasticsearch 6.5.0
 
 ```
-git checkout 6.2.2.0
+git checkout 6.5.0.0
 ```
 
-以下の手順でパッケージの作成を行います。
+To create the package.
 
 ```
 mvn package
 ```
 
-`target/releases`ディレクトリ以下にパッケージがビルドされれば成功です。
+The package will be built under `target/releases` directory.
 
 ## Install
 
-Elasticsearchにプラグインをインストールするには、以下のコマンドを実行します。
+To install the plugin on Elasticsearch, execute the following command.
 
 ```
-elasticsearch-plugin install file://(プラグインファイルのパス)
+elasticsearch-plugin install file://(Plug-in file path)
 ```
 
 ## Using filter in analyzer
 
-Elasticsearchのアナライザの設定で`concatenation`を指定すれば、使用できるようになります。
+You can use it by specifying `concatenation` in the analyzer setting of Elasticsearch.
 
-以下に例を示します。
+An example is shown below.
 
 ```
 "readingform_search_analyzer": {
