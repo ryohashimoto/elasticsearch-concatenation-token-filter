@@ -15,7 +15,7 @@ git clone https://github.com/ryohashimoto/elasticsearch-concatenation-token-filt
 To check out the tag for Elasticsearch 6.5.0
 
 ```
-git checkout 6.5.0.0
+git checkout 6.5.0.1
 ```
 
 To create the package.

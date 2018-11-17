@@ -6,7 +6,7 @@
 
     <groupId>org.elasticsearch</groupId>
     <artifactId>elasticsearch-concatenation-token-filter</artifactId>
-    <version>6.5.0.0</version>
+    <version>6.5.0.1</version>
     <packaging>jar</packaging>
     <description>Elasticsearch concatenation token filter plugin</description>
 
