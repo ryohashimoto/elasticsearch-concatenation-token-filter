@@ -1,4 +1,4 @@
-package tokyo.rev.elasticsearch.index.analysis;
+package com.github.ryohashimoto.elasticsearch.index.analysis;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.elasticsearch.common.settings.Settings;

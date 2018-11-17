@@ -1,7 +1,7 @@
-package tokyo.rev.elasticsearch.plugin.analysis;
+package com.github.ryohashimoto.elasticsearch.plugin.analysis;
 
 import org.elasticsearch.index.analysis.TokenFilterFactory;
-import tokyo.rev.elasticsearch.index.analysis.ConcatenationTokenFilterFactory;
+import com.github.ryohashimoto.elasticsearch.index.analysis.ConcatenationTokenFilterFactory;
 import org.elasticsearch.indices.analysis.AnalysisModule.AnalysisProvider;
 import org.elasticsearch.plugins.AnalysisPlugin;
 import org.elasticsearch.plugins.Plugin;

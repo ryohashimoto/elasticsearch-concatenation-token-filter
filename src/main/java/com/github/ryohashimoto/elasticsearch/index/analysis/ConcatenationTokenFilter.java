@@ -1,4 +1,4 @@
-package tokyo.rev.elasticsearch.index.analysis;
+package com.github.ryohashimoto.elasticsearch.index.analysis;
 
 import java.io.IOException;
 import java.util.ArrayList;
